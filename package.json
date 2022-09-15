@@ -9,6 +9,7 @@
   "author": "noxil pong.cpe@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "sequelize": "^6.21.6"
