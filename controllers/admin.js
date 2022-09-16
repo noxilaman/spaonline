@@ -19,9 +19,19 @@ exports.postAddRoom = (req, res, next) => {
   })
     .then((result) => {
       // console.log(result);
-      console.log("Created Product");
+      console.log("Created Room");
     })
     .catch((err) => {
       console.log(err);
     });
+};
+
+exports.getRooms = (req, res, next) => {
+  Room.fetchAll((rooms) => {
+    res.render("admin/rooms", {
+      prods: products,
+      pageTitle: "Admin Rooms",
+      path: "/admin/rooms",
+    });
+  });
 };
