@@ -15,9 +15,9 @@ router.get("/rooms", adminController.getRooms);
 // /admin/add-product => POST
 router.post("/rooms/addAction", adminController.postAddRoom);
 
-//router.get("/admin/rooms/edit/:roomId", adminController.getEditProduct);
+router.get("/rooms/edit/:roomId", adminController.getEditRoom);
 
-//router.post("/admin/rooms/editAction", adminController.postEditProduct);
+router.post("/rooms/editAction", adminController.postEditRoom);
 
 //router.post("/admin/rooms/deleteAction",adminController.postDeleteProduct);
 
